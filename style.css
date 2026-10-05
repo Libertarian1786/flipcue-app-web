@@ -100,14 +100,14 @@ main.wide { max-width: 1080px; }
 .stepgrid p { font-size: 15px; color: var(--muted); margin: 0; }
 
 /* Feature rows: one screenshot each, alternating sides on a wide screen. */
-.feature { display: grid; gap: 26px; align-items: center; margin: 72px 0 0; }
+.feature { display: grid; gap: 22px; align-items: center; margin: 52px 0 0; }
 .feature h2 { font-size: clamp(28px, 5vw, 40px); line-height: 1.08; letter-spacing: -0.035em; margin: 0 0 14px; }
 .feature p { color: var(--muted); margin: 0 0 12px; max-width: 46ch; }
 .feature p strong { color: var(--ink); }
-.feature-shot { margin: 0 auto; width: min(300px, 74vw); }
+.feature-shot { margin: 0 auto; width: min(260px, 68vw); }
 @media (min-width: 900px) {
-  .feature { grid-template-columns: 1fr 1fr; gap: 64px; margin-top: 96px; }
-  .feature-shot { width: 320px; }
+  .feature { grid-template-columns: 1fr 1fr; gap: 48px; margin-top: 60px; }
+  .feature-shot { width: 240px; }
   .feature.flip .feature-text { order: 2; }
   .feature.flip .feature-shot { order: 1; margin-left: auto; margin-right: 0; }
 }
