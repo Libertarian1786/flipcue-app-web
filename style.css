@@ -71,7 +71,11 @@ main.wide { max-width: 1080px; }
 .hero h1 em { font-style: normal; color: var(--gold); }
 .hero .lede { font-size: 18px; color: var(--muted); max-width: 40ch; margin: 0; }
 .hero .lede strong { color: var(--ink); }
-.cta { margin: 26px 0 0; display: flex; flex-direction: column; align-items: flex-start; gap: 12px; }
+.cta { margin: 26px 0 0; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 12px; }
+/* Apple's official badge: unaltered artwork, at least 40px tall, clear space around it. */
+.store-badge { display: inline-block; padding: 6px 0; line-height: 0; }
+.store-badge img { display: block; height: 60px; width: auto; }
+@media (min-width: 900px) { .cta { align-items: flex-start; text-align: left; } }
 .cta-note { font-size: 14px; color: var(--muted); }
 .hero-shot { margin: 0 auto; width: min(320px, 78vw); }
 .hero-shot img, .feature-shot img {
